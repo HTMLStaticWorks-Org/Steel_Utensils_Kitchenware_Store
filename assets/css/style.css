@@ -3756,12 +3756,12 @@ p { color: var(--text-muted); }
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .nav-menu, .nav-cta-btn {
-    display: none;
+    display: none !important;
   }
   .hamburger-btn {
-    display: flex;
+    display: flex !important;
   }
   .site-header .nav-actions > .action-btn {
     display: none !important;
