@@ -2396,20 +2396,25 @@ p { color: var(--text-muted); }
    Completely different layout, split-screen hero, bento grid & selectors
    =================================================================== */
 
-/* Split-Screen Lifestyle Hero */
+/* Split-Screen Lifestyle Hero (Home 2 — Viewport Fit & Legible Stats) */
 .hero-lifestyle {
   background: var(--grad-silver-hero);
-  padding: clamp(3.5rem, 6vw, 6rem) 0;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  padding: clamp(1.25rem, 3vh, 2.75rem) 0;
   position: relative;
   overflow: hidden;
   border-bottom: 1px solid var(--border-color);
+  box-sizing: border-box;
 }
 
 .hero-lifestyle-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: clamp(2rem, 5vw, 4.5rem);
+  gap: clamp(2rem, 4vw, 4rem);
   align-items: center;
+  width: 100%;
 }
 
 .hero-lifestyle-image-wrap {
@@ -2418,7 +2423,8 @@ p { color: var(--text-muted); }
   overflow: hidden;
   box-shadow: var(--shadow-lg);
   border: 3px solid var(--border-silver);
-  height: 480px;
+  height: clamp(360px, 52vh, 480px);
+  max-height: calc(100vh - 160px);
 }
 
 .hero-lifestyle-image-wrap img {
@@ -2430,6 +2436,40 @@ p { color: var(--text-muted); }
 
 .hero-lifestyle-image-wrap:hover img {
   transform: scale(1.04);
+}
+
+/* Home 2 Hero Highlights Row & High-Contrast Readable Stats (Bright Mode & Dark Mode) */
+.hero-highlights-row.light-stats {
+  display: flex;
+  gap: 2rem;
+  margin-top: clamp(1.25rem, 2.5vh, 2rem) !important;
+  padding-top: clamp(1rem, 2vh, 1.5rem) !important;
+  border-top: 1px solid var(--border-silver);
+}
+
+.hero-highlights-row.light-stats .hero-stat h4,
+.hero-lifestyle .hero-stat h4 {
+  font-size: 1.6rem !important;
+  color: var(--emerald-green) !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.hero-highlights-row.light-stats .hero-stat p,
+.hero-lifestyle .hero-stat p {
+  font-size: 0.88rem !important;
+  color: var(--forest-green) !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  margin: 0 !important;
+  opacity: 1 !important;
+}
+
+[data-theme="dark"] .hero-highlights-row.light-stats .hero-stat p,
+[data-theme="dark"] .hero-lifestyle .hero-stat p {
+  color: #FFFFFF !important;
+  opacity: 0.95 !important;
 }
 
 .lifestyle-spotlight {
@@ -3391,9 +3431,15 @@ p { color: var(--text-muted); }
   .hero-visual-stage {
     height: 400px;
   }
+
+  .hero-lifestyle {
+    min-height: auto !important;
+    padding: clamp(2.5rem, 5vw, 4rem) 0 !important;
+  }
   
   .hero-lifestyle-image-wrap {
     height: 380px;
+    max-height: none !important;
   }
 
   .bento-grid {
