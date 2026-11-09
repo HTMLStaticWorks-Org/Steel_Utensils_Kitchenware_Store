@@ -2280,6 +2280,10 @@ p { color: var(--text-muted); }
   align-items: center;
 }
 
+.final-cta-desc {
+  max-width: 520px;
+}
+
 .final-cta-img-wrap {
   display: flex;
   align-items: center;
@@ -2291,6 +2295,15 @@ p { color: var(--text-muted); }
   max-height: 320px;
   object-fit: contain;
   filter: drop-shadow(0 15px 30px rgba(0,0,0,0.5));
+}
+
+.final-cta-badge-img {
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  width: 120px;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.4));
+  border-radius: var(--radius-sm);
 }
 
 /* Products & Wedding Page Showcase Banners (Full & Fit Flush Split Showcase) */
@@ -3766,6 +3779,95 @@ p { color: var(--text-muted); }
   .site-header .nav-actions > .action-btn {
     display: none !important;
   }
+
+  /* Section 08 Final Shopping CTA — Center Alignment for Heading, Description, Buttons & Compact Images in Tab Views (768px & 1024px) */
+  .final-cta-box {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: clamp(2.25rem, 4.5vw, 3.5rem) clamp(1.25rem, 3.5vw, 2.5rem) !important;
+    gap: 1.75rem !important;
+  }
+
+  .final-cta-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .final-cta-box .section-badge {
+    margin: 0 auto 0.75rem auto !important;
+    display: inline-flex !important;
+  }
+
+  .final-cta-title,
+  .final-cta-box h2 {
+    text-align: center !important;
+    margin: 0.5rem auto 1rem auto !important;
+    max-width: 720px !important;
+  }
+
+  .final-cta-desc,
+  .final-cta-box p {
+    text-align: center !important;
+    margin: 0 auto 1.5rem auto !important;
+    max-width: 580px !important;
+  }
+
+  .final-cta-actions,
+  .final-cta-box .hero-actions {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 1rem !important;
+    flex-wrap: wrap !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .final-cta-box .btn,
+  .final-cta-box .btn-lg {
+    width: auto !important;
+    min-width: 200px !important;
+    max-width: 260px !important;
+    justify-content: center !important;
+    text-align: center !important;
+    flex: none !important;
+  }
+
+  .final-cta-img-wrap {
+    width: 100% !important;
+    max-width: 440px !important;
+    margin: 0.5rem auto 0 auto !important;
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .final-cta-img {
+    max-height: 290px !important;
+    width: auto !important;
+    max-width: 100% !important;
+    object-fit: contain !important;
+    display: block !important;
+    border-radius: var(--radius-md) !important;
+  }
+
+  .final-cta-badge-img {
+    position: absolute !important;
+    bottom: -6px !important;
+    right: 15px !important;
+    width: 110px !important;
+    border-radius: var(--radius-sm) !important;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.45)) !important;
+    display: block !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -4150,14 +4252,27 @@ p { color: var(--text-muted); }
 
   .final-cta-img-wrap {
     width: 100% !important;
-    max-width: 100% !important;
+    max-width: 440px !important;
+    margin: 0 auto !important;
+    position: relative !important;
     justify-content: center !important;
   }
 
   .final-cta-img {
-    width: 100% !important;
+    width: auto !important;
     max-width: 100% !important;
+    max-height: 280px !important;
     height: auto !important;
+    object-fit: contain !important;
+  }
+
+  .final-cta-badge-img {
+    position: absolute !important;
+    bottom: -6px !important;
+    right: 15px !important;
+    width: 100px !important;
+    border-radius: var(--radius-sm) !important;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.45)) !important;
   }
 
   .selector-result-card {
