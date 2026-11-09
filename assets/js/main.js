@@ -34,6 +34,7 @@
     loadRTL();
     loadStorage();
     initNavbar();
+    initBackToTop();
     initThemeToggle();
     initRTLToggle();
     initCartDrawer();
@@ -174,6 +175,43 @@
     // Close on mobile link click
     document.querySelectorAll('.mobile-nav-links .nav-link').forEach(link => {
       link.addEventListener('click', closeMobileMenu);
+    });
+  }
+
+  // --- Drop / Back to Top Button ---
+  function initBackToTop() {
+    let btn = document.getElementById('backToTop');
+    if (!btn) {
+      btn = document.createElement('button');
+      btn.id = 'backToTop';
+      btn.className = 'back-to-top-btn';
+      btn.setAttribute('aria-label', 'Drop to top');
+      btn.setAttribute('title', 'Back to top');
+      btn.innerHTML = `
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      `;
+      document.body.appendChild(btn);
+    }
+
+    const handleScroll = () => {
+      if (window.scrollY > 280) {
+        btn.classList.add('visible');
+      } else {
+        btn.classList.remove('visible');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     });
   }
 
