@@ -3109,11 +3109,16 @@ p { color: var(--text-muted); }
 }
 
 @media (min-width: 1025px) {
+  .catalogue-sidebar-wrap {
+    position: sticky;
+    top: 100px;
+  }
   .mobile-filter-bar {
     display: none !important;
   }
   .filter-sidebar {
     display: block !important;
+    position: static !important;
   }
   .btn-apply-mobile-filter {
     display: none !important;
@@ -3128,6 +3133,7 @@ p { color: var(--text-muted); }
   }
 
   .catalogue-sidebar-wrap {
+    position: static !important;
     width: 100% !important;
     margin-bottom: 0.5rem;
   }
@@ -3143,7 +3149,7 @@ p { color: var(--text-muted); }
     position: static !important;
     top: auto !important;
     width: 100% !important;
-    margin-bottom: 1.5rem !important;
+    margin-bottom: 1rem !important;
     box-shadow: var(--shadow-md) !important;
   }
 
@@ -3154,6 +3160,12 @@ p { color: var(--text-muted); }
 
   .btn-apply-mobile-filter {
     display: block !important;
+  }
+
+  .sidebar-trust-banner {
+    margin-top: 0 !important;
+    margin-bottom: 1.25rem !important;
+    width: 100% !important;
   }
 }
 
