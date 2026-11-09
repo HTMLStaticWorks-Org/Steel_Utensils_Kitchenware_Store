@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Services — STEEL UTENSILS</title>
+  <meta name="description" content="Personalized kitchenware selection, custom wedding utensil sets, hotel and catering bulk orders, and bespoke gift collections." />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/favicon.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Sticky Global Navbar -->
+  <header class="site-header">
+    <div class="container">
+      <div class="navbar-inner">
+        <a href="index.html" class="brand-logo" aria-label="Steel Utensils Home">
+          <img src="images/logo.png" alt="Steel Utensils Logo" class="brand-logo-icon" />
+          <div class="brand-logo-text">
+            <span class="brand-title">STEEL UTENSILS</span>
+            <span class="brand-tagline">Crafted for Every Kitchen</span>
+          </div>
+        </a>
+
+        <nav class="nav-menu" aria-label="Main Navigation">
+          <div class="nav-item-dropdown">
+            <a href="index.html" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              <span>Home</span>
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="index.html" class="dropdown-item">
+                <div class="dropdown-item-title">Home 1</div>
+                <div class="dropdown-item-desc">Premium Brand Showcase</div>
+              </a>
+              <a href="home-2.html" class="dropdown-item">
+                <div class="dropdown-item-title">Home 2</div>
+                <div class="dropdown-item-desc">Modern Kitchen Lifestyle</div>
+              </a>
+            </div>
+          </div>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link active">Services</a>
+          <a href="products.html" class="nav-link">Products</a>
+          <a href="wedding-sets.html" class="nav-link">Wedding Sets</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="action-btn cart-toggle-btn" aria-label="Cart" title="Cart"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg><span class="badge-count cart-badge">0</span></button>
+          <button class="action-btn theme-toggle-btn" aria-label="Theme" title="Theme"><span class="theme-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></span></button>
+          <button class="action-btn rtl-toggle-btn" aria-label="Toggle Direction (LTR / RTL)" title="Toggle RTL / LTR Direction">
+            <span class="rtl-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 7h16"></path>
+                <path d="M16 3l4 4-4 4"></path>
+                <path d="M20 17H4"></path>
+                <path d="M8 21l-4-4 4-4"></path>
+              </svg>
+            </span>
+          </button>
+          <button class="btn btn-primary btn-sm nav-cta-btn open-order-modal-btn">ORDER PRODUCTS</button>
+          <button class="hamburger-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-nav-header"><a href="index.html" class="brand-logo" style="gap: 0.5rem;"><img src="images/logo.png" alt="Steel Utensils Logo" class="brand-logo-icon" style="width: 44px; height: 34px;" /><span class="brand-title" style="font-size: 1.1rem;">STEEL UTENSILS</span></a><button class="modal-close mobile-nav-close">&times;</button></div>
+    <nav class="mobile-nav-links">
+      <div class="mobile-nav-group">
+        <div class="mobile-nav-link" style="display: flex; justify-content: space-between; align-items: center; font-weight: 700;">
+          <span>Home</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+        <div class="mobile-sublinks">
+          <a href="index.html" class="mobile-sublink">Home 1 — Brand Showcase</a>
+          <a href="home-2.html" class="mobile-sublink">Home 2 — Kitchen Lifestyle</a>
+        </div>
+      </div>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link active">Services</a>
+      <a href="products.html" class="nav-link">Products</a>
+      <a href="wedding-sets.html" class="nav-link">Wedding Sets</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <div class="mobile-sidebar-actions">
+        <button class="action-btn cart-toggle-btn" aria-label="Open Shopping Cart" title="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="badge-count cart-badge">0</span>
+        </button>
+
+        <button class="action-btn theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Theme">
+          <span class="theme-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+        </button>
+
+        <button class="action-btn rtl-toggle-btn" aria-label="Toggle Direction (LTR / RTL)" title="Toggle RTL / LTR Direction">
+          <span class="rtl-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 7h16"></path>
+              <path d="M16 3l4 4-4 4"></path>
+              <path d="M20 17H4"></path>
+              <path d="M8 21l-4-4 4-4"></path>
+            </svg>
+          </span>
+        </button>
+      </div>
+    </nav>
+    <div style="margin-top: auto;">
+      <button class="btn btn-primary open-order-modal-btn" style="width: 100%;">ORDER PRODUCTS</button>
+    </div>
+  </aside>
+  <div class="nav-overlay"></div>
+
+  <!-- Search Modal -->
+  <div class="search-modal" role="dialog" aria-modal="true" aria-label="Search"><div class="search-container"><div class="search-input-group"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg><input type="text" class="search-input" placeholder="Search utensils..." /><button class="search-close-btn">&times;</button></div><div class="search-results-list"></div></div></div>
+
+  <!-- Cart Drawer -->
+  <aside class="cart-drawer" role="dialog" aria-modal="true" aria-label="Cart"><div class="cart-header"><h3 style="font-size: 1.15rem; margin: 0;">Shopping Cart</h3><button class="modal-close cart-close-btn">&times;</button></div><div class="cart-body"></div><div class="cart-footer"><div class="cart-subtotal-row"><span>Cart Subtotal</span><span class="cart-subtotal-amount">₹0</span></div><button class="btn btn-primary btn-proceed-order" style="width: 100%;">Proceed to Order</button></div></aside>
+
+  <!-- Quick View Modal -->
+  <div class="modal-overlay modal-quickview" role="dialog" aria-modal="true"><div class="modal-content"><button class="modal-close">&times;</button><div class="quickview-grid"><div class="quickview-img-wrap"><img src="" alt="" class="qv-img" /></div><div class="quickview-details"><h2 class="qv-title"></h2><div class="quickview-price-wrap"><span class="quickview-price qv-price"></span></div><p class="qv-desc"></p><button class="btn btn-primary qv-add-btn btn-add-cart">Add to Cart</button></div></div></div></div>
+
+  <!-- Checkout / Order Modal -->
+  <div class="modal-overlay modal-checkout" role="dialog" aria-modal="true" aria-label="Order Enquiry Checkout">
+    <div class="modal-content checkout-modal-content">
+      <button class="modal-close" aria-label="Close checkout">&times;</button>
+      <div style="margin-bottom: 1.25rem;">
+        <span class="section-badge">Fast Order & Direct Enquiry</span>
+        <h2 style="font-size: 1.5rem; margin-top: 0.25rem;">Order Pure Stainless Steel Products</h2>
+        <p style="font-size: 0.875rem; color: var(--text-muted);">Please select a featured package or submit your utensil requirements. Our team confirms every order personally before dispatch.</p>
+      </div>
+
+      <!-- Quick Utensil Package Selector -->
+      <div class="quick-package-selector" style="margin-bottom: 1rem;">
+        <span style="font-size: 0.8rem; font-weight: 700; color: var(--text-light); text-transform: uppercase;">
+          Select Utensil Package (Or Order Custom Utensils):
+        </span>
+        <div class="package-pills" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem;">
+          <button type="button" class="package-pill active" data-name="3-Piece Triply Induction Cookware Set" data-price="4499">
+            🍳 Triply Cookware (₹4,499)
+          </button>
+          <button type="button" class="package-pill" data-name="28-Piece Authentic Dinner Thali Set" data-price="3999">
+            🍽️ 28-Pc Dinner Set (₹3,999)
+          </button>
+          <button type="button" class="package-pill" data-name="4-Piece Airtight Kitchen Canisters" data-price="1499">
+            🥫 Storage Canisters (₹1,499)
+          </button>
+          <button type="button" class="package-pill" data-name="51-Piece Shubh Vivah Bridal Wedding Trunk" data-price="18500">
+            👑 Wedding Trunk (₹18,500)
+          </button>
+        </div>
+      </div>
+
+      <div class="checkout-summary-box">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+          <span style="font-weight: 700; font-size: 0.95rem;">Order Breakdown</span>
+          <span class="order-type-indicator" style="font-size: 0.75rem; background: var(--soft-mint); color: var(--emerald-green); font-weight: 700; padding: 0.2rem 0.5rem; border-radius: var(--radius-full);">Direct Enquiry</span>
+        </div>
+        <div class="checkout-items-summary"></div>
+        <div style="display: flex; justify-content: space-between; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid var(--border-color); font-weight: 800;">
+          <span>Estimated Total (Incl. Taxes & Shipping)</span>
+          <span class="checkout-total-price" style="color: var(--emerald-green); font-size: 1.25rem;">₹4,499</span>
+        </div>
+      </div>
+
+      <form class="checkout-form">
+        <div class="form-group"><label class="form-label" for="cust-name">Full Name *</label><input type="text" id="cust-name" class="form-input" placeholder="e.g. Rajesh Kumar" required /></div>
+        <div class="form-group"><label class="form-label" for="cust-phone">Phone / WhatsApp *</label><input type="tel" id="cust-phone" class="form-input" placeholder="+91 98765 43210" required /></div>
+        <div class="form-group"><label class="form-label" for="cust-email">Email *</label><input type="email" id="cust-email" class="form-input" placeholder="rajesh@example.com" required /></div>
+        <div class="form-group"><label class="form-label" for="cust-city">City & Pincode *</label><input type="text" id="cust-city" class="form-input" placeholder="Mumbai, 400001" required /></div>
+        <div class="form-group-full form-group"><label class="form-label" for="cust-address">Delivery Address *</label><input type="text" id="cust-address" class="form-input" placeholder="House/Flat No., Street, Landmark" required /></div>
+        <div class="form-group-full form-group">
+          <label class="form-label" for="cust-notes">Special Instructions / Custom Engravings</label>
+          <textarea id="cust-notes" class="form-textarea" placeholder="Add custom laser engraving names, wedding gift notes, or induction requirements..."></textarea>
+        </div>
+        <div class="form-group-full" style="margin-top: 0.5rem;">
+          <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem; font-weight: 700;">CONFIRM PRODUCT ORDER ENQUIRY</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Expandable Service Details Modal -->
+  <div class="modal-overlay modal-service-details" role="dialog" aria-modal="true" aria-label="Service Details">
+    <div class="modal-content" style="max-width: 600px;">
+      <button class="modal-close">&times;</button>
+      <span class="section-badge">Service Details</span>
+      <h2 class="service-modal-title" style="margin: 0.5rem 0 1rem; font-size: 1.5rem;">Service Title</h2>
+      <p class="service-modal-desc" style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;"></p>
+      <div style="background: var(--bg-body); padding: 1.25rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color); margin-bottom: 1.5rem;">
+        <h4 style="font-size: 1rem; margin-bottom: 0.5rem;">How to Avail:</h4>
+        <p style="font-size: 0.875rem; color: var(--text-muted);">Contact our dedicated service consultant via phone (+91 98765 43210) or submit your requirement through our demo inquiry form below.</p>
+      </div>
+      <a href="contact.html" class="btn btn-primary" style="width: 100%;">Inquire About This Service</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ===================================================================
+         SECTION 01 — SERVICES HERO
+         =================================================================== -->
+    <section class="page-hero" style="background-image: url('images/image-103.png');">
+      <div class="container">
+        <span class="page-hero-badge">Dedicated Shopping Concierge</span>
+        <h1 class="page-hero-title">More Than Kitchenware.<br />A Complete Shopping Experience.</h1>
+        <p class="page-hero-subtitle">
+          Whether setting up your first home, ordering customized 101-piece wedding collections, or sourcing durable commercial cookware for restaurants, our specialized culinary services make every selection effortless.
+        </p>
+        <div class="hero-actions" style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
+          <a href="#services-list" class="btn btn-primary btn-lg">Our Concierge Services</a>
+          <a href="#bulk-section" class="btn btn-secondary btn-lg">Wholesale & Bulk Supply</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 02 — OUR SERVICES (4 INTERACTIVE CARDS)
+         =================================================================== -->
+    <section class="section" id="services-list">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Expert Offerings</span>
+          <h2 class="section-title">Tailored Solutions for Every Kitchen Need</h2>
+          <p class="section-subtitle">
+            Click "View More" on any service to inspect full scope, customization options, and fulfillment timelines.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <!-- Service 1: image-93.png -->
+          <div class="service-card">
+            <div class="service-img-wrap">
+              <img src="images/image-93.png" alt="Kitchenware Selection Assistance" class="img-cover" />
+            </div>
+            <div class="service-content">
+              <span style="font-size: 0.75rem; color: var(--fresh-green); font-weight: 700; text-transform: uppercase;">Consultation</span>
+              <h3 style="font-size: 1.2rem; margin: 0.35rem 0;">Kitchenware Selection Assistance</h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">Personalized guidance to select ideal gauge thickness, vessel depths, and utensil sets matched to your daily cooking habits.</p>
+              <ul class="service-benefits-list">
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Family-size vessel capacity calculation</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Induction vs. gas base compatibility checks</li>
+              </ul>
+              <div class="service-card-actions" style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: auto;">
+                <button class="btn btn-secondary btn-sm btn-service-view" data-title="Kitchenware Selection Assistance" data-desc="Our culinary specialists review your cooking repertoire—from tadkas and biryanis to baking—to recommend an exact capsule set of cookware, spatulas, and prep bowls. Avoid duplicate utensils and ensure maximum value for your kitchen space." style="flex: 1;">View Details</button>
+                <a href="contact.html" class="btn btn-primary btn-sm" style="flex: 1; text-align: center;">Book Consultation &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 2: image-21.png -->
+          <div class="service-card">
+            <div class="service-img-wrap">
+              <img src="images/image-21.png" alt="Wedding Utensil Collections" class="img-cover" />
+            </div>
+            <div class="service-content">
+              <span style="font-size: 0.75rem; color: var(--fresh-green); font-weight: 700; text-transform: uppercase;">Shubh Vivah</span>
+              <h3 style="font-size: 1.2rem; margin: 0.35rem 0;">Wedding Utensil Collections</h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">Bespoke Shagun kitchen sets featuring laser-engraved dinner thalis, storage drums, pooja accessories, and luxury cutlery trunks.</p>
+              <ul class="service-benefits-list">
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Custom bride name laser engraving</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> 51 to 101-piece traditional trunks</li>
+              </ul>
+              <div class="service-card-actions" style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: auto;">
+                <button class="btn btn-secondary btn-sm btn-service-view" data-title="Wedding Utensil Collections" data-desc="We design complete bridal utensil collections according to your regional traditions (North, South, Gujarati, Maharashtrian). Every item is engraved, safely boxed, and delivered ready for the wedding mandap ceremony." style="flex: 1;">View Details</button>
+                <a href="wedding-sets.html" class="btn btn-primary btn-sm" style="flex: 1; text-align: center;">View Wedding Sets &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3: image-102.png -->
+          <div class="service-card">
+            <div class="service-img-wrap">
+              <img src="images/image-102.png" alt="Bulk & Group Orders" class="img-cover" />
+            </div>
+            <div class="service-content">
+              <span style="font-size: 0.75rem; color: var(--fresh-green); font-weight: 700; text-transform: uppercase;">Commercial & Events</span>
+              <h3 style="font-size: 1.2rem; margin: 0.35rem 0;">Bulk & Group Orders</h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">Heavy-gauge stainless steel supply for restaurants, banquet caterers, corporate employee gifting, and large family reunions.</p>
+              <ul class="service-benefits-list">
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Tiered wholesale pricing tiers</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Secure pallet dispatch across India</li>
+              </ul>
+              <div class="service-card-actions" style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: auto;">
+                <button class="btn btn-secondary btn-sm btn-service-view" data-title="Bulk & Group Orders" data-desc="Get direct manufacturer-backed pricing on high-volume requirements. We supply heavy restaurant handis, buffet chafing servers, commercial thalis, and custom packaged corporate Diwali gift sets." style="flex: 1;">View Details</button>
+                <a href="#bulk-section" class="btn btn-primary btn-sm" style="flex: 1; text-align: center;">Get Bulk Quote &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 4: image-104.png -->
+          <div class="service-card">
+            <div class="service-img-wrap">
+              <img src="images/image-104.png" alt="Gift Collection Assistance" class="img-cover" />
+            </div>
+            <div class="service-content">
+              <span style="font-size: 0.75rem; color: var(--fresh-green); font-weight: 700; text-transform: uppercase;">Gift Registry</span>
+              <h3 style="font-size: 1.2rem; margin: 0.35rem 0;">Gift Collection Assistance</h3>
+              <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">Pre-packaged gift boxes in velvet presentation cases, laser-etched tea sets, and housewarming stainless cookware sets.</p>
+              <ul class="service-benefits-list">
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Velvet-lined presentation gift boxes</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Personalized greeting card enclosure</li>
+              </ul>
+              <div class="service-card-actions" style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: auto;">
+                <button class="btn btn-secondary btn-sm btn-service-view" data-title="Gift Collection Assistance" data-desc="Make housewarmings, anniversaries, and festive gifting effortless with our curated boxed sets. We offer premium gift wrap, personalized message cards, and door-to-door delivery." style="flex: 1;">View Details</button>
+                <a href="contact.html" class="btn btn-primary btn-sm" style="flex: 1; text-align: center;">Inquire Gifting &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 03 — WEDDING & SPECIAL OCCASION ASSISTANCE (4 CARDS)
+         =================================================================== -->
+    <section class="section bg-mint">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Celebration Specialists</span>
+          <h2 class="section-title">Thoughtful Collections for Meaningful Celebrations</h2>
+          <p class="section-subtitle">
+            From bridal trousseau kitchen trunks to ceremonial puja thalis, we craft lasting symbols of auspicious beginnings.
+          </p>
+        </div>
+
+        <div class="grid-4">
+          <!-- 1: image-127.png -->
+          <div class="wedding-collection-card">
+            <div class="wedding-card-img-wrap">
+              <img src="images/image-127.png" alt="Floral Thali Set with Jug & Casseroles" />
+            </div>
+            <div class="wedding-card-content">
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.4rem;">Complete Bridal Trousseau</h4>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Laser-floral thalis, water jugs, and lidded serving bowls for the new bride’s kitchen.</p>
+            </div>
+          </div>
+
+          <!-- 2: image-144.png -->
+          <div class="wedding-collection-card">
+            <div class="wedding-card-img-wrap">
+              <img src="images/image-144.png" alt="Urban Kraft Floral Etched Dinner Set" />
+            </div>
+            <div class="wedding-card-content">
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.4rem;">Floral Family Dining</h4>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">6-person dining sets designed with delicate laser engravings that resist fading.</p>
+            </div>
+          </div>
+
+          <!-- 3: image-150.png -->
+          <div class="wedding-collection-card">
+            <div class="wedding-card-img-wrap">
+              <img src="images/image-150.png" alt="Peacock Engraved Dining Set" />
+            </div>
+            <div class="wedding-card-content">
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.4rem;">Mayur Royal Feast Set</h4>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Traditional peacock motif engravings symbolizing harmony and culinary abundance.</p>
+            </div>
+          </div>
+
+          <!-- 4: image-141.png -->
+          <div class="wedding-collection-card">
+            <div class="wedding-card-img-wrap">
+              <img src="images/image-141.png" alt="Ornate Steel Pooja Thali Set" />
+            </div>
+            <div class="wedding-card-content">
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.4rem;">Pooja & Mandir Set</h4>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Includes embossed kalash, panchapatra with spoon, diya, and haldi-kumkum katoris.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="wedding-sets.html" class="btn btn-primary btn-lg">Explore Wedding Sets Page</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 04 — BULK ORDER ENQUIRIES (WORKING DEMO FORM)
+         =================================================================== -->
+    <section class="section" id="bulk-section">
+      <div class="container">
+        <div class="bulk-order-card">
+          <div class="editorial-layout">
+            <div>
+              <span class="section-badge">Commercial & Bulk Supply</span>
+              <h2 style="font-size: clamp(1.8rem, 3.2vw, 2.4rem); margin: 0.5rem 0 1rem;">
+                Looking for Wholesale or Institutional Supply?
+              </h2>
+              <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">
+                We partner with hotel chains, wedding organizers, and corporate institutions to supply certified 304/tri-ply stainless steel cookware with custom branding, logo laser etching, and insured bulk transport.
+              </p>
+              <div class="mobile-one-by-one-flex" style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+                <div style="border: 1px solid var(--border-silver); border-radius: var(--radius-sm); padding: 0.75rem; background: var(--bg-body); flex: 1; text-align: center;">
+                  <img src="images/image-146.png" alt="Storage Utility Drums & Buckets" style="max-height: 90px; margin: 0 auto 0.5rem; object-fit: contain;" />
+                  <strong style="font-size: 0.8rem; display: block;">Storage Drums & Utility</strong>
+                </div>
+                <div style="border: 1px solid var(--border-silver); border-radius: var(--radius-sm); padding: 0.75rem; background: var(--bg-body); flex: 1; text-align: center;">
+                  <img src="images/image-23.png" alt="Stack of Straight-Rim Thalis" style="max-height: 90px; margin: 0 auto 0.5rem; object-fit: contain;" />
+                  <strong style="font-size: 0.8rem; display: block;">Banquet Thali Stacks</strong>
+                </div>
+              </div>
+            </div>
+
+            <form class="bulk-order-form" style="background: var(--bg-surface); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+              <h4 style="margin-bottom: 1rem; font-size: 1.15rem;">Request Bulk Quote</h4>
+              <div class="mobile-one-by-one-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+                <div class="form-group"><label class="form-label">Contact Person *</label><input type="text" class="form-input" placeholder="Name" required /></div>
+                <div class="form-group"><label class="form-label">Business / Firm *</label><input type="text" class="form-input" placeholder="Organization" required /></div>
+                <div class="form-group"><label class="form-label">Phone Number *</label><input type="tel" class="form-input" placeholder="+91" required /></div>
+                <div class="form-group"><label class="form-label">Estimated Quantity *</label><select class="form-select"><option>50 - 100 Pieces</option><option>100 - 500 Pieces</option><option>500+ Pieces</option></select></div>
+                <div class="form-group-full form-group"><label class="form-label">Requirement Details</label><textarea class="form-textarea" placeholder="Specify items (e.g., 200 Dinner Thalis, 50 Kadais)..." required></textarea></div>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Submit Bulk Enquiry</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 05 — HOW OUR SHOPPING ASSISTANCE WORKS (4 STEPS)
+         =================================================================== -->
+    <section class="section bg-silver-subtle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Client Process</span>
+          <h2 class="section-title">How Our Shopping Assistance Works</h2>
+          <p class="section-subtitle">
+            From initial requirement sharing to dispatch, our 4-step workflow ensures absolute culinary satisfaction.
+          </p>
+        </div>
+
+        <div class="grid-4">
+          <!-- 1: image-95.png -->
+          <div class="journey-step-card">
+            <div class="journey-step-thumb">
+              <span class="journey-step-num">Step 01</span>
+              <img src="images/image-95.png" alt="Flat Lay Kitchen Utensils" class="img-cover" />
+            </div>
+            <div class="journey-step-content">
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.4rem;">Share Requirement</h4>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Tell us your family size, regional dining style, and budget preferences.</p>
+            </div>
+          </div>
+
+          <!-- 2: image-97.png -->
+          <div class="journey-step-card">
+            <div class="journey-step-thumb">
+              <span class="journey-step-num">Step 02</span>
+              <img src="images/image-97.png" alt="Illuminated Retail Shelves" class="img-cover" />
+            </div>
+            <div class="journey-step-content">
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.4rem;">Explore Collections</h4>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Receive a tailored portfolio of recommended cookware, thalis, and tools.</p>
+            </div>
+          </div>
+
+          <!-- 3: image-56.png -->
+          <div class="journey-step-card">
+            <div class="journey-step-thumb">
+              <span class="journey-step-num">Step 03</span>
+              <img src="images/image-56.png" alt="Serving Spoons on Board" class="img-cover" />
+            </div>
+            <div class="journey-step-content">
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.4rem;">Select Products</h4>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Fine-tune piece counts, request custom laser engraving, and inspect samples.</p>
+            </div>
+          </div>
+
+          <!-- 4: image-85.png -->
+          <div class="journey-step-card">
+            <div class="journey-step-thumb">
+              <span class="journey-step-num">Step 04</span>
+              <img src="images/image-85.png" alt="Insulated Thermal Bullet Flasks" class="img-cover" />
+            </div>
+            <div class="journey-step-content">
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.4rem;">Submit Enquiry</h4>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">Finalize your quote with safe transit packaging delivered directly to your doorstep.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 06 — SERVICE ENQUIRY CTA
+         =================================================================== -->
+    <section class="section section-sm bg-forest">
+      <div class="container">
+        <div class="editorial-layout" style="align-items: center;">
+          <div>
+            <span class="section-badge" style="background: rgba(255,255,255,0.15); color: #E8F3EC;">Direct Assistance</span>
+            <h2 style="color: #FFFFFF; font-size: clamp(1.8rem, 3.2vw, 2.5rem); margin: 0.5rem 0 1rem;">
+              Need Help Finding the Right Kitchen Collection?
+            </h2>
+            <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem; line-height: 1.6; margin-bottom: 1.75rem;">
+              Our seasoned kitchen consultants are ready to answer your questions regarding gauge weights, induction compatibility, and wedding trousseau sets.
+            </p>
+            <a href="contact.html" class="btn btn-white btn-lg">Contact Our Team</a>
+          </div>
+
+          <!-- image-151.png (Neelam Display Shelves) -->
+          <div style="border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-lg); border: 2px solid rgba(255,255,255,0.2); height: 320px;">
+            <img src="images/image-151.png" alt="Neelam Dinner Set Staged on Display Shelves" style="width: 100%; height: 100%; object-fit: cover;" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 1.25rem;">
+            <img src="images/logo.png" alt="Steel Utensils Logo" class="brand-logo-icon" />
+            <div class="brand-logo-text"><span class="brand-title" style="color: #FFFFFF; font-size: 1.2rem;">STEEL UTENSILS</span><span class="brand-tagline" style="color: #A8E8C0;">Crafted for Every Kitchen</span></div>
+          </a>
+          <p style="color: rgba(255,255,255,0.75); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.25rem;">Dedicated customer services, custom trousseau registries, and commercial cookware supply.</p>
+          <div class="footer-social-row">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Instagram">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Facebook">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="X">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="YouTube">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Explore</h4>
+          <div class="footer-links-list">
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="home-2.html" class="footer-link">Home 2</a>
+            <a href="about.html" class="footer-link">About Us</a>
+            <a href="services.html" class="footer-link">Services</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Collections</h4>
+          <div class="footer-links-list">
+            <a href="products.html" class="footer-link">Products Catalogue</a>
+            <a href="wedding-sets.html" class="footer-link">Wedding Sets</a>
+            <a href="products.html" class="footer-link">Tri-Ply Cookware</a>
+            <a href="products.html" class="footer-link">Dinner Thali Sets</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Customer Support</h4>
+          <div class="footer-links-list">
+            <a href="contact.html" class="footer-link">Contact Store</a>
+            <a href="services.html" class="footer-link">Shopping Assistance</a>
+            <a href="services.html" class="footer-link">Bulk Orders</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Newsletter</h4>
+          <form class="newsletter-form"><input type="email" class="newsletter-input" placeholder="Your email" required /><button type="submit" class="btn btn-primary btn-sm">Join</button></form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 STEEL UTENSILS STORE. All Rights Reserved.</div>
+        <div><span>100% Food-Grade 304 Steel</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

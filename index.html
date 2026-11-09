@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STEEL UTENSILS — Crafted for Every Kitchen. Made for Every Moment.</title>
+  <meta name="description" content="Explore premium stainless steel cookware, dinner thali sets, kitchen storage, and wedding utensil collections crafted for modern Indian homes." />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/favicon.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    /* Section 07: Alternating One-by-One Journey Timeline */
+    .journey-zigzag-container {
+      position: relative;
+      max-width: 980px;
+      margin: 2.5rem auto 0;
+      padding: 1.5rem 0;
+    }
+    .journey-zigzag-container::before {
+      content: '';
+      position: absolute;
+      top: 40px;
+      bottom: 40px;
+      left: 50%;
+      width: 2px;
+      background: linear-gradient(180deg,
+        rgba(30, 123, 79, 0.05) 0%,
+        rgba(30, 123, 79, 0.35) 15%,
+        rgba(30, 123, 79, 0.35) 85%,
+        rgba(30, 123, 79, 0.05) 100%
+      );
+      transform: translateX(-50%);
+    }
+    .journey-zigzag-row {
+      display: flex;
+      position: relative;
+      align-items: center;
+      margin-bottom: 2.75rem;
+      width: 100%;
+    }
+    .journey-zigzag-row:last-child {
+      margin-bottom: 0;
+    }
+    .journey-zigzag-node {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--bg-card, #ffffff);
+      border: 2.5px solid var(--emerald-green, #1E7B4F);
+      box-shadow: 0 0 0 6px rgba(30, 123, 79, 0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.85rem;
+      color: var(--emerald-green, #1E7B4F);
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      transition: all 0.35s ease;
+    }
+    .journey-zigzag-row:hover .journey-zigzag-node {
+      background: var(--emerald-green, #1E7B4F);
+      color: #ffffff;
+      box-shadow: 0 0 0 8px rgba(30, 123, 79, 0.22);
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+    .journey-zigzag-card {
+      width: calc(50% - 48px);
+      background: var(--bg-card, #ffffff);
+      border: 1px solid var(--border-color, rgba(0, 0, 0, 0.08));
+      border-radius: 20px;
+      padding: 1.85rem 2rem;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.04);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+    }
+    .row-left {
+      justify-content: flex-start;
+    }
+    .row-right {
+      justify-content: flex-end;
+    }
+    .row-left .journey-zigzag-card {
+      margin-right: auto;
+    }
+    .row-right .journey-zigzag-card {
+      margin-left: auto;
+    }
+    .journey-zigzag-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--emerald-green, #1E7B4F);
+      box-shadow: 0 16px 36px rgba(30, 123, 79, 0.12);
+    }
+    .journey-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.25rem;
+      width: 100%;
+    }
+    .journey-step-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--emerald-green, #1E7B4F);
+      background: var(--soft-mint, #E8F3EC);
+      padding: 0.35rem 0.95rem;
+      border-radius: var(--radius-full, 9999px);
+      border: 1px solid rgba(30, 123, 79, 0.2);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+    }
+    .journey-step-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--emerald-green, #1E7B4F);
+      transition: all 0.3s ease;
+    }
+    .journey-zigzag-card:hover .journey-step-badge {
+      background: var(--emerald-green, #1E7B4F);
+      color: #ffffff;
+      border-color: var(--emerald-green, #1E7B4F);
+    }
+    .journey-zigzag-card:hover .journey-step-dot {
+      background: #ffffff;
+    }
+    .journey-icon-wrap {
+      width: 58px;
+      height: 58px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(30, 123, 79, 0.08) 0%, rgba(30, 123, 79, 0.18) 100%);
+      border: 1.5px solid rgba(30, 123, 79, 0.22);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--emerald-green, #1E7B4F);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .journey-zigzag-card:hover .journey-icon-wrap {
+      background: var(--emerald-green, #1E7B4F);
+      color: #ffffff;
+      transform: scale(1.08);
+      box-shadow: 0 8px 20px rgba(30, 123, 79, 0.25);
+    }
+    .journey-step-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      margin: 0 0 0.5rem 0;
+      color: var(--text-dark, #111827);
+    }
+    .journey-step-desc {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: var(--text-muted, #6b7280);
+      margin: 0;
+    }
+    @media (max-width: 768px) {
+      .journey-zigzag-container::before {
+        left: 22px;
+      }
+      .journey-zigzag-node {
+        left: 22px;
+        top: 32px;
+        transform: translate(-50%, 0);
+      }
+      .journey-zigzag-row:hover .journey-zigzag-node {
+        transform: translate(-50%, 0) scale(1.1);
+      }
+      .journey-zigzag-card {
+        width: calc(100% - 52px);
+        margin-left: 52px !important;
+        margin-right: 0 !important;
+        padding: 1.5rem 1.4rem;
+      }
+      .journey-zigzag-row {
+        margin-bottom: 2rem;
+      }
+    }
+    [data-theme="dark"] .journey-zigzag-card {
+      background: rgba(255, 255, 255, 0.04);
+      border-color: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+    [data-theme="dark"] .journey-zigzag-card:hover {
+      border-color: rgba(108, 210, 152, 0.6);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+    }
+    [data-theme="dark"] .journey-zigzag-node {
+      background: #111e17;
+      border-color: #6CD298;
+      color: #6CD298;
+      box-shadow: 0 0 0 6px rgba(108, 210, 152, 0.15);
+    }
+    [data-theme="dark"] .journey-step-badge {
+      background: rgba(30, 123, 79, 0.25);
+      color: #6CD298;
+      border-color: rgba(108, 210, 152, 0.3);
+    }
+    [data-theme="dark"] .journey-step-dot {
+      background: #6CD298;
+    }
+    [data-theme="dark"] .journey-icon-wrap {
+      background: rgba(30, 123, 79, 0.25);
+      border-color: rgba(108, 210, 152, 0.3);
+      color: #6CD298;
+    }
+    [data-theme="dark"] .journey-zigzag-card:hover .journey-icon-wrap {
+      background: #1E7B4F;
+      color: #ffffff;
+    }
+    [data-theme="dark"] .journey-step-title {
+      color: #ffffff;
+    }
+    [data-theme="dark"] .journey-step-desc {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    /* Hero Section with Rich Kitchenware Background Image */
+    .hero-home1 {
+      position: relative;
+      background-image: url('images/image-101.png') !important;
+      background-size: cover !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+    }
+    .hero-home1::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(10, 36, 25, 0.88) 0%, rgba(18, 59, 42, 0.82) 50%, rgba(8, 26, 18, 0.90) 100%);
+      z-index: 1;
+    }
+    .hero-home1 .container {
+      position: relative;
+      z-index: 2;
+    }
+    [data-theme="dark"] .hero-home1::before {
+      background: linear-gradient(135deg, rgba(6, 20, 14, 0.92) 0%, rgba(10, 32, 23, 0.88) 50%, rgba(4, 16, 11, 0.95) 100%);
+    }
+
+    /* Hero Showcase 3D Visual Stage Enhancement */
+    .hero-visual-stage {
+      position: relative;
+      height: 480px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-main-circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 440px;
+      height: 440px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(108, 210, 152, 0.28) 0%, rgba(30, 123, 79, 0.14) 48%, rgba(14, 46, 32, 0) 72%);
+      border: 1.5px dashed rgba(255, 255, 255, 0.22);
+      box-shadow: 0 0 80px rgba(61, 150, 101, 0.22);
+      pointer-events: none;
+    }
+    .hero-main-vessel {
+      position: relative;
+      z-index: 2;
+      width: 380px;
+      max-width: 90%;
+      height: auto;
+      max-height: 400px;
+      object-fit: contain;
+      background: transparent !important;
+      filter: drop-shadow(0 25px 35px rgba(0, 0, 0, 0.55));
+      animation: floatVessel 6s ease-in-out infinite alternate;
+      margin: 0 auto;
+      display: block;
+    }
+    .floating-badge {
+      position: absolute;
+      z-index: 4;
+      background: rgba(255, 255, 255, 0.95);
+      color: #0E2E20;
+      padding: 0.65rem 1.15rem;
+      border-radius: 16px;
+      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.32);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-weight: 700;
+      font-size: 0.85rem;
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+    }
+    .floating-badge:hover {
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.38);
+    }
+    .floating-badge img {
+      width: 40px !important;
+      height: 40px !important;
+      border-radius: 10px;
+      background: #f0f7f3;
+      padding: 3px;
+      object-fit: contain;
+    }
+    .badge-top-right {
+      top: 6%;
+      right: -25px;
+      animation: floatSubtle 5s ease-in-out infinite alternate;
+    }
+    .badge-bottom-left {
+      bottom: 8%;
+      left: -30px;
+      animation: floatSubtle 6s ease-in-out infinite alternate-reverse;
+    }
+    @media (max-width: 992px) {
+      .hero-visual-stage {
+        height: 420px;
+        margin-top: 2rem;
+      }
+      .hero-main-circle {
+        width: 360px;
+        height: 360px;
+      }
+      .hero-main-vessel {
+        width: 320px;
+        max-height: 340px;
+      }
+      .badge-top-right {
+        top: 2%;
+        right: 0;
+      }
+      .badge-bottom-left {
+        bottom: 4%;
+        left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Global Navbar -->
+  <header class="site-header">
+    <div class="container">
+      <div class="navbar-inner">
+        <!-- Logo -->
+        <a href="index.html" class="brand-logo" aria-label="Steel Utensils Home">
+          <img src="images/logo.png" alt="Steel Utensils Logo" class="brand-logo-icon" />
+          <div class="brand-logo-text">
+            <span class="brand-title">STEEL UTENSILS</span>
+            <span class="brand-tagline">Crafted for Every Kitchen</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <nav class="nav-menu" aria-label="Main Navigation">
+          <div class="nav-item-dropdown">
+            <a href="index.html" class="nav-link dropdown-toggle active" aria-expanded="false" aria-haspopup="true">
+              <span>Home</span>
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="index.html" class="dropdown-item active">
+                <div class="dropdown-item-title">Home 1</div>
+                <div class="dropdown-item-desc">Premium Brand Showcase</div>
+              </a>
+              <a href="home-2.html" class="dropdown-item">
+                <div class="dropdown-item-title">Home 2</div>
+                <div class="dropdown-item-desc">Modern Kitchen Lifestyle</div>
+              </a>
+            </div>
+          </div>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="products.html" class="nav-link">Products</a>
+          <a href="wedding-sets.html" class="nav-link">Wedding Sets</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Right Side Utility Icons & CTA -->
+        <div class="nav-actions">
+          <button class="action-btn cart-toggle-btn" aria-label="Open Shopping Cart" title="Cart">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            <span class="badge-count cart-badge">0</span>
+          </button>
+
+          <button class="action-btn theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Theme">
+            <span class="theme-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </span>
+          </button>
+
+          <button class="action-btn rtl-toggle-btn" aria-label="Toggle Direction (LTR / RTL)" title="Toggle RTL / LTR Direction">
+            <span class="rtl-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 7h16"></path>
+                <path d="M16 3l4 4-4 4"></path>
+                <path d="M20 17H4"></path>
+                <path d="M8 21l-4-4 4-4"></path>
+              </svg>
+            </span>
+          </button>
+
+          <button class="btn btn-primary btn-sm nav-cta-btn open-order-modal-btn">ORDER PRODUCTS</button>
+
+          <!-- Mobile Hamburger -->
+          <button class="hamburger-btn" aria-label="Toggle navigation drawer">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="mobile-nav-header">
+      <a href="index.html" class="brand-logo" style="gap: 0.5rem;">
+        <img src="images/logo.png" alt="Steel Utensils Logo" class="brand-logo-icon" style="width: 44px; height: 34px;" />
+        <span class="brand-title" style="font-size: 1.1rem;">STEEL UTENSILS</span>
+      </a>
+      <button class="modal-close mobile-nav-close" aria-label="Close menu">&times;</button>
+    </div>
+    <nav class="mobile-nav-links">
+      <div class="mobile-nav-group">
+        <div class="mobile-nav-link" style="display: flex; justify-content: space-between; align-items: center; font-weight: 700;">
+          <span>Home</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
+        <div class="mobile-sublinks">
+          <a href="index.html" class="mobile-sublink active">Home 1 — Brand Showcase</a>
+          <a href="home-2.html" class="mobile-sublink">Home 2 — Kitchen Lifestyle</a>
+        </div>
+      </div>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="products.html" class="nav-link">Products</a>
+      <a href="wedding-sets.html" class="nav-link">Wedding Sets</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <div class="mobile-sidebar-actions">
+        <button class="action-btn cart-toggle-btn" aria-label="Open Shopping Cart" title="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="badge-count cart-badge">0</span>
+        </button>
+
+        <button class="action-btn theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Theme">
+          <span class="theme-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+        </button>
+
+        <button class="action-btn rtl-toggle-btn" aria-label="Toggle Direction (LTR / RTL)" title="Toggle RTL / LTR Direction">
+          <span class="rtl-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 7h16"></path>
+              <path d="M16 3l4 4-4 4"></path>
+              <path d="M20 17H4"></path>
+              <path d="M8 21l-4-4 4-4"></path>
+            </svg>
+          </span>
+        </button>
+      </div>
+    </nav>
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 0.75rem;">
+      <button class="btn btn-primary open-order-modal-btn" style="width: 100%;">ORDER PRODUCTS</button>
+    </div>
+  </aside>
+  <div class="nav-overlay"></div>
+
+  <!-- Search Overlay Modal -->
+  <div class="search-modal" role="dialog" aria-modal="true" aria-label="Product Search">
+    <div class="search-container">
+      <div class="search-input-group">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" class="search-input" placeholder="Search steel kadai, pressure cooker, thali sets..." />
+        <button class="search-close-btn" aria-label="Close search">&times;</button>
+      </div>
+      <div class="search-suggestions">
+        <small style="color: var(--text-light); text-transform: uppercase; font-weight: 700; font-size: 0.75rem;">Popular Searches</small>
+        <div class="search-tags">
+          <span class="search-tag">Pressure Cooker</span>
+          <span class="search-tag">Triply Kadai</span>
+          <span class="search-tag">Dinner Thali</span>
+          <span class="search-tag">Canisters</span>
+          <span class="search-tag">Masala Dabba</span>
+          <span class="search-tag">Wedding Set</span>
+        </div>
+      </div>
+      <div class="search-results-list"></div>
+    </div>
+  </div>
+
+  <!-- Cart Drawer -->
+  <aside class="cart-drawer" role="dialog" aria-modal="true" aria-label="Shopping Cart">
+    <div class="cart-header">
+      <div class="cart-title-wrap">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <h3 style="font-size: 1.15rem; margin: 0;">Shopping Cart</h3>
+      </div>
+      <button class="modal-close cart-close-btn" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-body"></div>
+    <div class="cart-footer">
+      <div class="cart-free-shipping">
+        <div class="shipping-threshold-text">Add items for FREE Delivery across India!</div>
+        <div class="shipping-bar-bg">
+          <div class="shipping-bar-fill" style="width: 45%;"></div>
+        </div>
+      </div>
+      <div class="cart-subtotal-row">
+        <span>Cart Subtotal</span>
+        <span class="cart-subtotal-amount">₹0</span>
+      </div>
+      <div style="display: flex; gap: 0.75rem;">
+        <button class="btn btn-secondary cart-continue-btn" style="flex: 1;">Keep Shopping</button>
+        <button class="btn btn-primary btn-proceed-order" style="flex: 1.2;">Proceed to Order</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Quick View Modal -->
+  <div class="modal-overlay modal-quickview" role="dialog" aria-modal="true" aria-label="Product Quick View">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close quick view">&times;</button>
+      <div class="quickview-grid">
+        <div class="quickview-img-wrap">
+          <img src="" alt="" class="qv-img" />
+        </div>
+        <div class="quickview-details">
+          <span class="section-badge qv-category">Cookware</span>
+          <h2 class="qv-title" style="font-size: 1.5rem; margin: 0;">Product Title</h2>
+          <div class="quickview-price-wrap">
+            <span class="quickview-price qv-price">₹0</span>
+            <span class="quickview-mrp qv-mrp">₹0</span>
+            <span class="quickview-discount qv-discount">35% OFF</span>
+          </div>
+          <p class="qv-desc" style="font-size: 0.9rem; line-height: 1.55; color: var(--text-muted);"></p>
+          <div class="quickview-specs">
+            <div class="spec-item">
+              <span class="spec-label">Material</span>
+              <span class="spec-val">Food-Grade 304 Stainless Steel</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Finish</span>
+              <span class="spec-val">Mirror Polish & Brushed Steel</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Care</span>
+              <span class="spec-val">100% Dishwasher Safe</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Thermal Base</span>
+              <span class="spec-val">Gas & Induction Compatible</span>
+            </div>
+          </div>
+          <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+            <button class="btn btn-primary qv-add-btn btn-add-cart" style="flex: 1;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Order Enquiry / Checkout Modal -->
+  <div class="modal-overlay modal-checkout" role="dialog" aria-modal="true" aria-label="Order Enquiry Checkout">
+    <div class="modal-content checkout-modal-content">
+      <button class="modal-close" aria-label="Close checkout">&times;</button>
+      <div style="margin-bottom: 1.25rem;">
+        <span class="section-badge">Fast Order & Direct Enquiry</span>
+        <h2 style="font-size: 1.5rem; margin-top: 0.25rem;">Order Pure Stainless Steel Products</h2>
+        <p style="font-size: 0.875rem; color: var(--text-muted);">Please select a featured package or submit your utensil requirements. Our team confirms every order personally before dispatch.</p>
+      </div>
+
+      <!-- Quick Utensil Package Selector -->
+      <div class="quick-package-selector" style="margin-bottom: 1rem;">
+        <span style="font-size: 0.8rem; font-weight: 700; color: var(--text-light); text-transform: uppercase;">
+          Select Utensil Package (Or Order Custom Utensils):
+        </span>
+        <div class="package-pills" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem;">
+          <button type="button" class="package-pill active" data-name="3-Piece Triply Induction Cookware Set" data-price="4499">
+            🍳 Triply Cookware (₹4,499)
+          </button>
+          <button type="button" class="package-pill" data-name="28-Piece Authentic Dinner Thali Set" data-price="3999">
+            🍽️ 28-Pc Dinner Set (₹3,999)
+          </button>
+          <button type="button" class="package-pill" data-name="4-Piece Airtight Kitchen Canisters" data-price="1499">
+            🥫 Storage Canisters (₹1,499)
+          </button>
+          <button type="button" class="package-pill" data-name="51-Piece Shubh Vivah Bridal Wedding Trunk" data-price="18500">
+            👑 Wedding Trunk (₹18,500)
+          </button>
+        </div>
+      </div>
+
+      <div class="checkout-summary-box">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+          <span style="font-weight: 700; font-size: 0.95rem;">Order Breakdown</span>
+          <span class="order-type-indicator" style="font-size: 0.75rem; background: var(--soft-mint); color: var(--emerald-green); font-weight: 700; padding: 0.2rem 0.5rem; border-radius: var(--radius-full);">Direct Enquiry</span>
+        </div>
+        <div class="checkout-items-summary"></div>
+        <div style="display: flex; justify-content: space-between; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid var(--border-color); font-weight: 800;">
+          <span>Estimated Total (Incl. Taxes & Shipping)</span>
+          <span class="checkout-total-price" style="color: var(--emerald-green); font-size: 1.25rem;">₹4,499</span>
+        </div>
+      </div>
+
+      <form class="checkout-form">
+        <div class="form-group">
+          <label class="form-label" for="cust-name">Full Name *</label>
+          <input type="text" id="cust-name" class="form-input" placeholder="e.g. Rajesh Kumar" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="cust-phone">Phone / WhatsApp Number *</label>
+          <input type="tel" id="cust-phone" class="form-input" placeholder="+91 98765 43210" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="cust-email">Email Address *</label>
+          <input type="email" id="cust-email" class="form-input" placeholder="rajesh@example.com" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="cust-city">City & Pincode *</label>
+          <input type="text" id="cust-city" class="form-input" placeholder="Mumbai, 400001" required />
+        </div>
+        <div class="form-group-full form-group">
+          <label class="form-label" for="cust-address">Delivery Address *</label>
+          <input type="text" id="cust-address" class="form-input" placeholder="House/Flat No., Street, Landmark" required />
+        </div>
+        <div class="form-group-full form-group">
+          <label class="form-label" for="cust-notes">Special Instructions / Custom Engravings</label>
+          <textarea id="cust-notes" class="form-textarea" placeholder="Add custom laser engraving names, wedding gift notes, or induction requirements..."></textarea>
+        </div>
+        <div class="form-group-full" style="margin-top: 0.5rem;">
+          <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem; font-weight: 700;">
+            CONFIRM PRODUCT ORDER ENQUIRY
+          </button>
+          <small style="display: block; text-align: center; color: var(--text-light); margin-top: 0.5rem;">
+            * Demo submission for frontend enquiry preview. No payment transaction collected.
+          </small>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <main>
+    <!-- ===================================================================
+         SECTION 01 — PREMIUM CINEMATIC HERO
+         =================================================================== -->
+    <section class="hero-home1" style="background-image: url('images/image-101.png');">
+      <div class="container">
+        <div class="hero-home1-grid">
+          <div class="hero-home1-content">
+            <div class="hero-badge-silver">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+              <span>100% Pure Food-Grade Stainless Steel</span>
+            </div>
+            <h1 class="hero-home1-title">
+              Elevate Every Kitchen with <span>Timeless Steelware.</span>
+            </h1>
+            <p class="hero-home1-text">
+              Discover beautifully crafted stainless steel cookware, everyday kitchen essentials and elegant collections designed for modern homes.
+            </p>
+            <div class="hero-actions">
+              <a href="products.html" class="btn btn-white btn-lg">EXPLORE PRODUCTS</a>
+              <a href="wedding-sets.html" class="btn btn-outline-white btn-lg">DISCOVER WEDDING SETS</a>
+            </div>
+            <div class="hero-highlights-row">
+              <div class="hero-stat">
+                <h3>304 Grade</h3>
+                <p>Rust-Proof Steel</p>
+              </div>
+              <div class="hero-stat">
+                <h3>Tri-Ply Base</h3>
+                <p>Uniform Heat Transfer</p>
+              </div>
+              <div class="hero-stat">
+                <h3>100+ Designs</h3>
+                <p>Kitchen Essentials</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3D Floating Showcase Stage -->
+          <div class="hero-visual-stage">
+            <div class="hero-main-circle"></div>
+            <!-- Main Hero Vessel: image-113.png (Pressure Cooker) -->
+            <img src="images/image-113.png" alt="Stainless Steel Pressure Cooker" class="hero-main-vessel" />
+            <!-- Floating Badge Top Right: image-27.png (Hammered Handi) -->
+            <div class="floating-badge badge-top-right">
+              <img src="images/image-27.png" alt="Hammered Serving Handi" />
+              <div>
+                <div style="font-size: 0.72rem; color: var(--emerald-green); font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em;">Handcrafted</div>
+                <div style="font-size: 0.88rem; font-weight: 700; color: #0E2E20;">Hammered Handi</div>
+              </div>
+            </div>
+            <!-- Floating Badge Bottom Left: image-1.png (7pc Tool Set) -->
+            <div class="floating-badge badge-bottom-left">
+              <img src="images/image-1.png" alt="7-Piece Kitchen Tool Set" />
+              <div>
+                <div style="font-size: 0.72rem; color: var(--emerald-green); font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em;">Ergonomic Stand</div>
+                <div style="font-size: 0.88rem; font-weight: 700; color: #0E2E20;">7-Pc Utensil Set</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 02 — SHOP BY CATEGORY (6 CARDS)
+         =================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Curated Departments</span>
+          <h2 class="section-title">Everything Your Kitchen Needs</h2>
+          <p class="section-subtitle">
+            From heavy-bottom kadais to artisanal wedding thalis, explore six core collections tailored for authentic cooking and stylish hosting.
+          </p>
+        </div>
+
+        <div class="grid-6">
+          <!-- Card 1: Cookware (image-37.png) -->
+          <!-- Card 1: Cookware (image-92.png) -->
+          <div class="category-card">
+            <div class="category-img-wrap">
+              <img src="images/image-92.png" alt="Stainless Steel Cookware Collection" class="category-img img-cover" />
+            </div>
+            <h3 class="category-title">Cookware</h3>
+            <p class="category-desc">Deep kadais, triply frying pans, saucepans and heavy-gauge induction pots.</p>
+            <a href="products.html?category=Cookware" class="category-link">
+              Shop Cookware
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+
+          <!-- Card 2: Dinner Sets (image-22.png) -->
+          <div class="category-card">
+            <div class="category-img-wrap">
+              <img src="images/image-22.png" alt="12-Piece Stainless Steel Dinner Thali Set" class="category-img img-cover" />
+            </div>
+            <h3 class="category-title">Dinner Sets</h3>
+            <p class="category-desc">Mirror-polished authentic Indian thalis, bowls, quarter plates and tumblers.</p>
+            <a href="products.html?category=Dinner+Sets" class="category-link">
+              Shop Dinner Sets
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+
+          <!-- Card 3: Kitchen Storage (image-70.png) -->
+          <div class="category-card">
+            <div class="category-img-wrap">
+              <img src="images/image-70.png" alt="4-Piece Airtight Storage Canisters" class="category-img img-cover" />
+            </div>
+            <h3 class="category-title">Kitchen Storage</h3>
+            <p class="category-desc">Airtight canisters, clamp-lock glass lid jars and multi-tier dabbas for pantry order.</p>
+            <a href="products.html?category=Kitchen+Storage" class="category-link">
+              Shop Storage & Jars
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+
+          <!-- Card 4: Serving Essentials (image-28.png) -->
+          <div class="category-card">
+            <div class="category-img-wrap">
+              <img src="images/image-28.png" alt="3-Piece Belly Handi Casseroles" class="category-img img-cover" />
+            </div>
+            <h3 class="category-title">Serving Essentials</h3>
+            <p class="category-desc">Insulated belly handis, covered casseroles, platters and elegant table servers.</p>
+            <a href="products.html?category=Serving+Essentials" class="category-link">
+              Shop Serving Handis
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+
+          <!-- Card 5: Cooking Utensils (image-2.png) -->
+          <div class="category-card">
+            <div class="category-img-wrap">
+              <img src="images/image-2.png" alt="6-Piece Stainless Steel Cooking Utensil Set" class="category-img img-cover" />
+            </div>
+            <h3 class="category-title">Cooking Utensils</h3>
+            <p class="category-desc">Precision turners, soup ladles, skimmers, whisks and ergonomic cooking spatulas.</p>
+            <a href="products.html?category=Cooking+Utensils" class="category-link">
+              Shop Cooking Utensils
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+
+          <!-- Card 6: Kitchen Accessories (image-63.png) -->
+          <div class="category-card">
+            <div class="category-img-wrap">
+              <img src="images/image-63.png" alt="Stainless Steel Kitchen Accessories & Tools" class="category-img img-cover" />
+            </div>
+            <h3 class="category-title">Kitchen Accessories</h3>
+            <p class="category-desc">Multi-sided graters, strainers, lemon squeezers, cutlery organizers and tea flasks.</p>
+            <a href="products.html?category=Accessories" class="category-link">
+              Shop Kitchen Accessories
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 03 — BESTSELLING COLLECTION (6 CARDS)
+         =================================================================== -->
+    <section class="section bg-silver-subtle">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Verified Favorites</span>
+          <h2 class="section-title">Customer Favourites, Made to Last</h2>
+          <p class="section-subtitle">
+            Our most loved culinary instruments trusted by Indian households for everyday robustness and gleaming silver aesthetics.
+          </p>
+        </div>
+
+        <div class="grid-6">
+          <!-- Product 1: image-111.png -->
+          <div class="product-card" data-category="Cookware" data-price="1899" data-rating="4.9">
+            <div class="product-img-wrap">
+              <span class="product-badges">
+                <span class="badge-discount">25% OFF</span>
+                <span class="badge-tag">Bestseller</span>
+              </span>
+              <div class="product-actions-floating">
+                <button class="product-action-btn btn-wishlist" data-id="prod-111" title="Add to Wishlist" aria-label="Wishlist">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                <button class="product-action-btn btn-quick-view" data-id="prod-111" data-title="Vinod Triply Stainless Steel Kadai with Lid" data-price="1899" data-mrp="2499" data-discount="25% OFF" data-image="images/image-111.png" data-desc="Heavy-duty 2.5L triply kadai with riveted stay-cool loop handles and a snug stainless steel lid for fast curries and frying." data-category="Cookware" title="Quick View" aria-label="Quick View">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </button>
+              </div>
+              <img src="images/image-111.png" alt="Vinod Stainless Steel Kadai with Lid" class="product-img" />
+            </div>
+            <div class="product-content">
+              <span class="product-category-label">Cookware</span>
+              <h4 class="product-title">Vinod Triply Kadai with Steel Lid (2.5L)</h4>
+              <p class="product-desc">Heavy tri-ply construction prevents food burning while ensuring uniform thermal convection.</p>
+              <div class="product-rating">
+                <span>★★★★★</span>
+                <span class="rating-count">(142 reviews)</span>
+              </div>
+              <div class="product-price-row">
+                <div>
+                  <span class="price-current">₹1,899</span>
+                  <span class="price-original">₹2,499</span>
+                </div>
+                <button class="btn-add-cart" data-id="prod-111" data-title="Vinod Triply Kadai with Steel Lid" data-price="1899" data-image="images/image-111.png">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2: image-114.png -->
+          <div class="product-card" data-category="Cookware" data-price="1699" data-rating="4.8">
+            <div class="product-img-wrap">
+              <span class="product-badges">
+                <span class="badge-discount">30% OFF</span>
+              </span>
+              <div class="product-actions-floating">
+                <button class="product-action-btn btn-wishlist" data-id="prod-114" title="Add to Wishlist" aria-label="Wishlist">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                <button class="product-action-btn btn-quick-view" data-id="prod-114" data-title="Brushed Steel Stockpot Casserole (3.5L)" data-price="1699" data-mrp="2399" data-discount="30% OFF" data-image="images/image-114.png" data-desc="Deep stainless stockpot ideal for boiling rice, simmering broths and slow cooking curries with fitted brushed steel lid." data-category="Cookware" title="Quick View" aria-label="Quick View">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </button>
+              </div>
+              <img src="images/image-114.png" alt="Brushed Stainless Steel Stockpot" class="product-img" />
+            </div>
+            <div class="product-content">
+              <span class="product-category-label">Cookware</span>
+              <h4 class="product-title">Brushed Stockpot Casserole (3.5L)</h4>
+              <p class="product-desc">Generous depth with sturdy hollow cast side handles that remain comfortable during use.</p>
+              <div class="product-rating">
+                <span>★★★★★</span>
+                <span class="rating-count">(98 reviews)</span>
+              </div>
+              <div class="product-price-row">
+                <div>
+                  <span class="price-current">₹1,699</span>
+                  <span class="price-original">₹2,399</span>
+                </div>
+                <button class="btn-add-cart" data-id="prod-114" data-title="Brushed Stockpot Casserole (3.5L)" data-price="1699" data-image="images/image-114.png">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3: image-9.png -->
+          <div class="product-card" data-category="Dinner Sets" data-price="3999" data-rating="5.0">
+            <div class="product-img-wrap">
+              <span class="product-badges">
+                <span class="badge-discount">35% OFF</span>
+                <span class="badge-tag">Family Set</span>
+              </span>
+              <div class="product-actions-floating">
+                <button class="product-action-btn btn-wishlist" data-id="prod-9" title="Add to Wishlist" aria-label="Wishlist">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                <button class="product-action-btn btn-quick-view" data-id="prod-9" data-title="28-Piece Stainless Steel Family Dinner Set" data-price="3999" data-mrp="5999" data-discount="35% OFF" data-image="images/image-9.png" data-desc="Complete 6-person dining collection with deep dinner thalis, halwa bowls, curry katoris, glasses and matching spoons." data-category="Dinner Sets" title="Quick View" aria-label="Quick View">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </button>
+              </div>
+              <img src="images/image-9.png" alt="28-Piece Stainless Steel Dinner Set" class="product-img" />
+            </div>
+            <div class="product-content">
+              <span class="product-category-label">Dinner Sets</span>
+              <h4 class="product-title">28-Piece Family Dinner Thali Set</h4>
+              <p class="product-desc">Mirror-finish dining luxury with 6 thali plates, 12 katoris, 6 water glasses and 6 spoons.</p>
+              <div class="product-rating">
+                <span>★★★★★</span>
+                <span class="rating-count">(214 reviews)</span>
+              </div>
+              <div class="product-price-row">
+                <div>
+                  <span class="price-current">₹3,999</span>
+                  <span class="price-original">₹5,999</span>
+                </div>
+                <button class="btn-add-cart" data-id="prod-9" data-title="28-Piece Family Dinner Thali Set" data-price="3999" data-image="images/image-9.png">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4: image-120.png -->
+          <div class="product-card" data-category="Cookware" data-price="1299" data-rating="4.8">
+            <div class="product-img-wrap">
+              <span class="product-badges">
+                <span class="badge-discount">20% OFF</span>
+              </span>
+              <div class="product-actions-floating">
+                <button class="product-action-btn btn-wishlist" data-id="prod-120" title="Add to Wishlist" aria-label="Wishlist">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                <button class="product-action-btn btn-quick-view" data-id="prod-120" data-title="Vinod Honeycomb Stainless Steel Dosa Tawa" data-price="1299" data-mrp="1649" data-discount="20% OFF" data-image="images/image-120.png" data-desc="Hexagonal laser-etched honeycomb pattern protects coating while offering effortless roti and crispy dosa release." data-category="Cookware" title="Quick View" aria-label="Quick View">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </button>
+              </div>
+              <img src="images/image-120.png" alt="Honeycomb Dosa Tawa" class="product-img" />
+            </div>
+            <div class="product-content">
+              <span class="product-category-label">Cookware</span>
+              <h4 class="product-title">Honeycomb Stainless Steel Dosa Tawa (28cm)</h4>
+              <p class="product-desc">Advanced textured non-stick technology paired with triply stainless base for paper-thin dosas.</p>
+              <div class="product-rating">
+                <span>★★★★★</span>
+                <span class="rating-count">(86 reviews)</span>
+              </div>
+              <div class="product-price-row">
+                <div>
+                  <span class="price-current">₹1,299</span>
+                  <span class="price-original">₹1,649</span>
+                </div>
+                <button class="btn-add-cart" data-id="prod-120" data-title="Honeycomb Stainless Dosa Tawa" data-price="1299" data-image="images/image-120.png">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 5: image-131.png -->
+          <div class="product-card" data-category="Cookware" data-price="1999" data-rating="4.9">
+            <div class="product-img-wrap">
+              <span class="product-badges">
+                <span class="badge-discount">28% OFF</span>
+              </span>
+              <div class="product-actions-floating">
+                <button class="product-action-btn btn-wishlist" data-id="prod-131" title="Add to Wishlist" aria-label="Wishlist">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                <button class="product-action-btn btn-quick-view" data-id="prod-131" data-title="4-Tier Stainless Multi Food Steamer" data-price="1999" data-mrp="2799" data-discount="28% OFF" data-image="images/image-131.png" data-desc="Versatile 4-tier stackable food steamer pot with glass lid for idlis, momos, dhokla and steamed greens." data-category="Cookware" title="Quick View" aria-label="Quick View">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </button>
+              </div>
+              <img src="images/image-131.png" alt="4-Tier Stainless Steel Steamer" class="product-img" />
+            </div>
+            <div class="product-content">
+              <span class="product-category-label">Cookware</span>
+              <h4 class="product-title">4-Tier Multi-Level Food Steamer Set</h4>
+              <p class="product-desc">Stackable perforated compartments with heavy boiling pot base and tempered glass steam vent lid.</p>
+              <div class="product-rating">
+                <span>★★★★★</span>
+                <span class="rating-count">(112 reviews)</span>
+              </div>
+              <div class="product-price-row">
+                <div>
+                  <span class="price-current">₹1,999</span>
+                  <span class="price-original">₹2,799</span>
+                </div>
+                <button class="btn-add-cart" data-id="prod-131" data-title="4-Tier Multi Food Steamer Set" data-price="1999" data-image="images/image-131.png">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 6: image-71.png -->
+          <div class="product-card" data-category="Storage" data-price="799" data-rating="4.9">
+            <div class="product-img-wrap">
+              <span class="product-badges">
+                <span class="badge-discount">33% OFF</span>
+              </span>
+              <div class="product-actions-floating">
+                <button class="product-action-btn btn-wishlist" data-id="prod-71" title="Add to Wishlist" aria-label="Wishlist">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </button>
+                <button class="product-action-btn btn-quick-view" data-id="prod-71" data-title="Traditional Stainless Steel Masala Dabba (7 Katoris)" data-price="799" data-mrp="1199" data-discount="33% OFF" data-image="images/image-71.png" data-desc="Authentic spice container with 7 inner removable katoris, small measuring spoon and airtight double protection lid." data-category="Storage" title="Quick View" aria-label="Quick View">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </button>
+              </div>
+              <img src="images/image-71.png" alt="Traditional Indian Masala Dabba" class="product-img" />
+            </div>
+            <div class="product-content">
+              <span class="product-category-label">Storage</span>
+              <h4 class="product-title">Traditional Masala Dabba (7 Katoris + Spoon)</h4>
+              <p class="product-desc">Double-lid spice vault that preserves aromatic pungency of turmeric, mustard and cumin.</p>
+              <div class="product-rating">
+                <span>★★★★★</span>
+                <span class="rating-count">(310 reviews)</span>
+              </div>
+              <div class="product-price-row">
+                <div>
+                  <span class="price-current">₹799</span>
+                  <span class="price-original">₹1,199</span>
+                </div>
+                <button class="btn-add-cart" data-id="prod-71" data-title="Traditional Masala Dabba" data-price="799" data-image="images/image-71.png">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 04 — WHY CHOOSE OUR KITCHENWARE? (4 MODULES)
+         =================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Engineering & Heritage</span>
+          <h2 class="section-title">Quality You Can See. Durability You Can Trust.</h2>
+          <p class="section-subtitle">
+            Every utensil is shaped from pure food-grade stainless steel to deliver uncompromised cooking hygiene, lifelong durability, and timeless brilliance.
+          </p>
+        </div>
+
+        <div class="grid-4">
+          <!-- Benefit 1: image-30.png -->
+          <div class="benefit-card">
+            <div class="benefit-img-wrap">
+              <img src="images/image-30.png" alt="Artisanal Hammered Stainless Steel Pots" class="benefit-img img-cover" />
+            </div>
+            <div class="benefit-content">
+              <span class="benefit-badge">Pillar 01 / Metallurgy</span>
+              <h3 class="benefit-title">Premium Stainless Steel</h3>
+              <p class="benefit-text">Made from high-purity food-grade steel alloy that resists rust, pitting and acidic reactions with Indian spices.</p>
+            </div>
+          </div>
+
+          <!-- Benefit 2: image-8.png -->
+          <div class="benefit-card">
+            <div class="benefit-img-wrap">
+              <img src="images/image-8.png" alt="Ergonomic Stainless Cooking Utensils" class="benefit-img img-cover" />
+            </div>
+            <div class="benefit-content">
+              <span class="benefit-badge">Pillar 02 / Strength</span>
+              <h3 class="benefit-title">Everyday Durability</h3>
+              <p class="benefit-text">Reinforced rims and seamless welds withstand heavy daily tossing, high gas flame, and vigorous stirring without dents.</p>
+            </div>
+          </div>
+
+          <!-- Benefit 3: image-73.png -->
+          <div class="benefit-card">
+            <div class="benefit-img-wrap">
+              <img src="images/image-73.png" alt="Clear Window Storage Canisters" class="benefit-img img-cover" />
+            </div>
+            <div class="benefit-content">
+              <span class="benefit-badge">Pillar 03 / Ergonomics</span>
+              <h3 class="benefit-title">Practical Kitchen Designs</h3>
+              <p class="benefit-text">Thoughtful details like clear pantry viewing windows, stay-cool handles, and pour spouts made for actual cooking routines.</p>
+            </div>
+          </div>
+
+          <!-- Benefit 4: image-10.png -->
+          <div class="benefit-card">
+            <div class="benefit-img-wrap">
+              <img src="images/image-10.png" alt="Sparkling Clean Stainless Steel Kitchenware" class="benefit-img img-cover" />
+            </div>
+            <div class="benefit-content">
+              <span class="benefit-badge">Pillar 04 / Hygiene</span>
+              <h3 class="benefit-title">Easy-Care Convenience</h3>
+              <p class="benefit-text">Non-porous stainless surfaces wash sparkling clean in seconds, naturally stain-resistant and safe in all modern dishwashers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 05 — FEATURED KITCHEN COLLECTION
+         =================================================================== -->
+    <section class="section bg-mint">
+      <div class="container">
+        <div class="editorial-layout">
+          <div>
+            <span class="section-badge">Masterpiece Cookware</span>
+            <h2 class="section-title">Designed for the Heart of Your Home</h2>
+            <p style="font-size: 1.05rem; line-height: 1.6; margin-bottom: 1.5rem;">
+              Experience the pinnacle of culinary craft with our professional-grade stainless steel collection. Engineered with thick encapsulating thermal bases for rapid heating without hot spots.
+            </p>
+            <div class="editorial-feature-list">
+              <div class="editorial-feature-item">
+                <svg class="editorial-check-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <div>
+                  <strong>Tri-Ply Aluminum Core Encapsulation</strong>
+                  <p style="font-size: 0.875rem;">Fast, uniform conduction that saves gas cooking time and locks in natural vegetable flavors.</p>
+                </div>
+              </div>
+              <div class="editorial-feature-item">
+                <svg class="editorial-check-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <div>
+                  <strong>Induction & Flame Universal Compatibility</strong>
+                  <p style="font-size: 0.875rem;">Flat magnetic steel base performs flawlessly across LPG gas, induction hobs, and electric stoves.</p>
+                </div>
+              </div>
+              <div class="editorial-feature-item">
+                <svg class="editorial-check-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <div>
+                  <strong>Ergonomic Stainless Cast Riveted Handles</strong>
+                  <p style="font-size: 0.875rem;">Permanently fixed heavy rivets assure unwavering grip and safety when lifting heavy gravies.</p>
+                </div>
+              </div>
+            </div>
+            <a href="products.html?category=Cookware" class="btn btn-primary btn-lg">Shop Full Cookware Range &rarr;</a>
+          </div>
+
+          <!-- Editorial Image Collage: image-92.png, image-44.png, image-38.png, image-112.png -->
+          <div class="editorial-img-collage">
+            <div class="editorial-img-main">
+              <img src="images/image-92.png" alt="Premium Stainless Steel Cookware Collection" />
+            </div>
+            <div class="editorial-img-sub-col">
+              <div class="editorial-img-sub">
+                <img src="images/image-44.png" alt="Stainless Braiser Pan with Glass Lid" />
+              </div>
+              <div class="editorial-img-sub">
+                <img src="images/image-38.png" alt="Stainless Steel Skillet Frying Pan" />
+              </div>
+              <div class="editorial-img-sub">
+                <img src="images/image-112.png" alt="Stainless Steel Milk Pan" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 06 — WEDDING SPECIAL COLLECTION (DARK-GREEN, 4 CARDS)
+         =================================================================== -->
+    <section class="section bg-forest">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Shubh Vivah Collections</span>
+          <h2 class="section-title">Make Every Wedding Gift Memorable</h2>
+          <p class="section-subtitle">
+            Explore elegant stainless steel wedding utensil collections designed for meaningful gifting, blessings and blessed new beginnings.
+          </p>
+        </div>
+
+        <div class="grid-4">
+          <!-- Card 1: image-14.png -->
+          <div class="wedding-collection-card" style="background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.15);">
+            <div class="wedding-card-img-wrap" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
+              <img src="images/image-14.png" alt="Sumeet 24-Piece Dinner Thali Set" class="img-cover" />
+            </div>
+            <div class="wedding-card-content">
+              <span style="font-size: 0.75rem; color: #6CD298; font-weight: 700; text-transform: uppercase;">Traditional Thali Set</span>
+              <h4 style="color: #FFFFFF; font-size: 1.15rem; margin: 0.35rem 0;">Sumeet 24-Pc Vivah Thali Set</h4>
+              <p style="color: rgba(255,255,255,0.75); font-size: 0.85rem;">Grand mirror-polished dining ensemble featuring dinner plates, tumblers, and katoris.</p>
+              <div style="font-size: 1.25rem; font-weight: 800; color: #6CD298; margin: 0.75rem 0;">From ₹4,499</div>
+              <a href="wedding-sets.html#wedding-grid" class="btn btn-outline-white btn-sm" style="margin-top: auto;">View 24-Pc Vivah Set</a>
+            </div>
+          </div>
+
+          <!-- Card 2: image-16.png -->
+          <div class="wedding-collection-card" style="background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.15);">
+            <div class="wedding-card-img-wrap" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
+              <img src="images/image-16.png" alt="Banquet Dinnerware Set with Handis" class="img-cover" />
+            </div>
+            <div class="wedding-card-content">
+              <span style="font-size: 0.75rem; color: #6CD298; font-weight: 700; text-transform: uppercase;">Banquet Ensemble</span>
+              <h4 style="color: #FFFFFF; font-size: 1.15rem; margin: 0.35rem 0;">Royal Banquet Table Collection</h4>
+              <p style="color: rgba(255,255,255,0.75); font-size: 0.85rem;">Includes covered serving handis, water jug, serving platters, and luxury dining cutlery.</p>
+              <div style="font-size: 1.25rem; font-weight: 800; color: #6CD298; margin: 0.75rem 0;">From ₹8,999</div>
+              <a href="wedding-sets.html#wedding-grid" class="btn btn-outline-white btn-sm" style="margin-top: auto;">View Banquet Table Set</a>
+            </div>
+          </div>
+
+          <!-- Card 3: image-20.png -->
+          <div class="wedding-collection-card" style="background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.15);">
+            <div class="wedding-card-img-wrap" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
+              <img src="images/image-20.png" alt="Designer Floral Etched Casserole Set" class="img-cover" />
+            </div>
+            <div class="wedding-card-content">
+              <span style="font-size: 0.75rem; color: #6CD298; font-weight: 700; text-transform: uppercase;">Etched Artistry</span>
+              <h4 style="color: #FFFFFF; font-size: 1.15rem; margin: 0.35rem 0;">Floral Etched Casserole Set</h4>
+              <p style="color: rgba(255,255,255,0.75); font-size: 0.85rem;">Fine floral engraving on insulated steel handis adorned with crown lid finials.</p>
+              <div style="font-size: 1.25rem; font-weight: 800; color: #6CD298; margin: 0.75rem 0;">From ₹3,499</div>
+              <a href="wedding-sets.html#wedding-grid" class="btn btn-outline-white btn-sm" style="margin-top: auto;">View Casserole Set</a>
+            </div>
+          </div>
+
+          <!-- Card 4: image-22.png -->
+          <div class="wedding-collection-card" style="background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.15);">
+            <div class="wedding-card-img-wrap" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
+              <img src="images/image-22.png" alt="Taluka Handcrafted Hammered Dinner Set" class="img-cover" />
+            </div>
+            <div class="wedding-card-content">
+              <span style="font-size: 0.75rem; color: #6CD298; font-weight: 700; text-transform: uppercase;">Hammered Heritage</span>
+              <h4 style="color: #FFFFFF; font-size: 1.15rem; margin: 0.35rem 0;">Taluka Hammered Thali Set</h4>
+              <p style="color: rgba(255,255,255,0.75); font-size: 0.85rem;">Authentic hand-hammered texture that catches light with regal silver shimmer.</p>
+              <div style="font-size: 1.25rem; font-weight: 800; color: #6CD298; margin: 0.75rem 0;">From ₹2,899</div>
+              <a href="wedding-sets.html#wedding-grid" class="btn btn-outline-white btn-sm" style="margin-top: auto;">View Hammered Thali Set</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3.5rem;">
+          <a href="wedding-sets.html" class="btn btn-white btn-lg">EXPLORE ALL WEDDING SETS</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 07 — THE SHOPPING EXPERIENCE (4 STEPS)
+         =================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">How It Works</span>
+          <h2 class="section-title">From Kitchen Inspiration to Your Favourite Collection</h2>
+          <p class="section-subtitle">
+            A seamless, transparent frontend discovery and ordering journey crafted for modern homemakers and gift buyers.
+          </p>
+        </div>
+
+        <div class="journey-zigzag-container">
+          <!-- Step 1: DISCOVER (Left) -->
+          <div class="journey-zigzag-row row-left">
+            <div class="journey-zigzag-card">
+              <div class="journey-card-top">
+                <span class="journey-step-badge">
+                  <span class="journey-step-dot"></span>
+                  STEP 01
+                </span>
+                <div class="journey-icon-wrap" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                </div>
+              </div>
+              <h4 class="journey-step-title">DISCOVER</h4>
+              <p class="journey-step-desc">Explore our stainless steel categories, filter by dimensions, capacities and cooking styles.</p>
+            </div>
+            <div class="journey-zigzag-node" aria-hidden="true">01</div>
+          </div>
+
+          <!-- Step 2: SELECT (Right) -->
+          <div class="journey-zigzag-row row-right">
+            <div class="journey-zigzag-node" aria-hidden="true">02</div>
+            <div class="journey-zigzag-card">
+              <div class="journey-card-top">
+                <span class="journey-step-badge">
+                  <span class="journey-step-dot"></span>
+                  STEP 02
+                </span>
+                <div class="journey-icon-wrap" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                    <path d="M9 13.5l2 2 4-4"></path>
+                  </svg>
+                </div>
+              </div>
+              <h4 class="journey-step-title">SELECT</h4>
+              <p class="journey-step-desc">Compare gauge thicknesses, finishes, customer ratings and comprehensive product specs.</p>
+            </div>
+          </div>
+
+          <!-- Step 3: ADD TO CART (Left) -->
+          <div class="journey-zigzag-row row-left">
+            <div class="journey-zigzag-card">
+              <div class="journey-card-top">
+                <span class="journey-step-badge">
+                  <span class="journey-step-dot"></span>
+                  STEP 03
+                </span>
+                <div class="journey-icon-wrap" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="20" r="1.5"></circle>
+                    <circle cx="18" cy="20" r="1.5"></circle>
+                    <path d="M1 2h3.5l2.2 11.5a1.8 1.8 0 0 0 1.8 1.5h8.8a1.8 1.8 0 0 0 1.8-1.4l1.5-8.6H5.5"></path>
+                    <line x1="13" y1="6" x2="13" y2="10"></line>
+                    <line x1="11" y1="8" x2="15" y2="8"></line>
+                  </svg>
+                </div>
+              </div>
+              <h4 class="journey-step-title">ADD TO CART</h4>
+              <p class="journey-step-desc">Build your preferred kitchen combination with real-time subtotal updates and free shipping tracker.</p>
+            </div>
+            <div class="journey-zigzag-node" aria-hidden="true">03</div>
+          </div>
+
+          <!-- Step 4: PLACE ORDER (Right) -->
+          <div class="journey-zigzag-row row-right">
+            <div class="journey-zigzag-node" aria-hidden="true">04</div>
+            <div class="journey-zigzag-card">
+              <div class="journey-card-top">
+                <span class="journey-step-badge">
+                  <span class="journey-step-dot"></span>
+                  STEP 04
+                </span>
+                <div class="journey-icon-wrap" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="1" y="4" width="14" height="12" rx="1.5"></rect>
+                    <path d="M15 8h4.5l3 3.5v4.5h-7.5V8z"></path>
+                    <circle cx="5.5" cy="18.5" r="2.2"></circle>
+                    <circle cx="18.5" cy="18.5" r="2.2"></circle>
+                  </svg>
+                </div>
+              </div>
+              <h4 class="journey-step-title">PLACE ORDER</h4>
+              <p class="journey-step-desc">Continue through the streamlined checkout enquiry modal to receive personalized order confirmation.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-actions" style="text-align: center; margin-top: 3.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="products.html" class="btn btn-primary btn-lg">Start Shopping Kitchenware</a>
+          <button class="btn btn-secondary btn-lg open-order-modal-btn">Quick Order Enquiry</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION 08 — FINAL SHOPPING CTA
+         =================================================================== -->
+    <section class="section section-sm">
+      <div class="container">
+        <div class="final-cta-box">
+          <div>
+            <span class="section-badge" style="background: rgba(255,255,255,0.15); color: #E8F3EC; border-color: rgba(255,255,255,0.3);">
+              Begin Your Culinary Journey
+            </span>
+            <h2 style="color: #FFFFFF; font-size: clamp(1.8rem, 3.2vw, 2.5rem); margin: 0.75rem 0 1rem;">
+              Your Perfect Kitchen Collection Starts Here.
+            </h2>
+            <p style="color: rgba(255,255,255,0.85); font-size: 1.05rem; line-height: 1.6; margin-bottom: 2rem; max-width: 520px;">
+              Find the right kitchen essentials for everyday cooking, family occasions and special celebrations with authentic 304 food-grade stainless steel.
+            </p>
+            <div class="hero-actions" style="display: flex; flex-wrap: wrap; gap: 1rem;">
+              <a href="products.html" class="btn btn-white btn-lg">SHOP PRODUCTS</a>
+              <a href="wedding-sets.html" class="btn btn-outline-white btn-lg">EXPLORE WEDDING SETS</a>
+            </div>
+          </div>
+          <div class="final-cta-img-wrap">
+            <!-- image-153.png (Taç Cookware Ensemble) & image-125.png (Oval Serving Platter) -->
+            <img src="images/image-153.png" alt="Complete Stainless Steel Cookware Ensemble" class="final-cta-img" />
+            <img src="images/image-125.png" alt="Stainless Oval Serving Platter" style="position: absolute; bottom: -10px; right: 0; width: 120px; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.4));" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================
+       GLOBAL FOOTER
+       =================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Column -->
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 1.25rem;">
+            <img src="images/logo.png" alt="Steel Utensils Logo" class="brand-logo-icon" />
+            <div class="brand-logo-text">
+              <span class="brand-title" style="color: #FFFFFF; font-size: 1.2rem;">STEEL UTENSILS</span>
+              <span class="brand-tagline" style="color: #A8E8C0;">Crafted for Every Kitchen</span>
+            </div>
+          </a>
+          <p style="color: rgba(255,255,255,0.75); font-size: 0.9rem; line-height: 1.6; margin-bottom: 1.25rem;">
+            India’s dedicated brand for pure food-grade stainless steel cookware, dinner sets, kitchen organizers and wedding utensil collections.
+          </p>
+          <div class="footer-social-row">
+            <a href="#" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="X">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 1: Explore -->
+        <div>
+          <h4 class="footer-col-title">Explore</h4>
+          <div class="footer-links-list">
+            <a href="index.html" class="footer-link">Home (Brand Showcase)</a>
+            <a href="home-2.html" class="footer-link">Home 2 (Kitchen Lifestyle)</a>
+            <a href="about.html" class="footer-link">About Our Brand</a>
+            <a href="services.html" class="footer-link">Customer Services</a>
+          </div>
+        </div>
+
+        <!-- Column 2: Collections -->
+        <div>
+          <h4 class="footer-col-title">Collections</h4>
+          <div class="footer-links-list">
+            <a href="products.html" class="footer-link">All Products Catalogue</a>
+            <a href="wedding-sets.html" class="footer-link">Wedding Sets & Trunks</a>
+            <a href="products.html" class="footer-link">Tri-Ply Cookware</a>
+            <a href="products.html" class="footer-link">Dinner Thali Sets</a>
+          </div>
+        </div>
+
+        <!-- Column 3: Customer Support -->
+        <div>
+          <h4 class="footer-col-title">Customer Support</h4>
+          <div class="footer-links-list">
+            <a href="contact.html" class="footer-link">Contact Store</a>
+            <a href="services.html" class="footer-link">Shopping Assistance</a>
+            <a href="services.html" class="footer-link">Bulk & Hotel Enquiries</a>
+            <a href="contact.html" class="footer-link">Visit Showroom</a>
+          </div>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div>
+          <h4 class="footer-col-title">Newsletter</h4>
+          <p class="footer-newsletter-text">
+            Subscribe to receive new culinary launches, seasonal festival offers, and wedding collection updates.
+          </p>
+          <form class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Enter your email" required />
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+          <div style="margin-top: 1rem; font-size: 0.75rem; color: rgba(255,255,255,0.6);">
+            🔒 We respect your privacy. No spam ever.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 STEEL UTENSILS STORE. All Rights Reserved.</div>
+        <div><span>100% Food-Grade 304 Steel</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
