@@ -3075,6 +3075,35 @@ p { color: var(--text-muted); }
   cursor: pointer;
 }
 
+/* Sidebar Trust Banner (Products Page — High Contrast Readable Text) */
+.sidebar-trust-banner {
+  background: var(--soft-mint) !important;
+  padding: 1.15rem 1rem !important;
+  border-radius: var(--radius-sm) !important;
+  border: 1px solid rgba(23, 107, 69, 0.25) !important;
+  font-size: 0.88rem !important;
+  box-shadow: 0 2px 8px rgba(18, 59, 42, 0.06) !important;
+  margin-top: 1rem;
+}
+
+.sidebar-trust-banner strong {
+  color: var(--forest-green) !important;
+  font-weight: 800 !important;
+  font-size: 0.95rem !important;
+  display: block !important;
+  margin-bottom: 0.35rem !important;
+  letter-spacing: -0.01em !important;
+}
+
+.sidebar-trust-banner p {
+  color: #123B2A !important;
+  font-weight: 600 !important;
+  font-size: 0.86rem !important;
+  line-height: 1.5 !important;
+  margin: 0 !important;
+  opacity: 1 !important;
+}
+
 .filter-top-bar {
   display: flex;
   flex-wrap: wrap;
