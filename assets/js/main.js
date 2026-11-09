@@ -851,6 +851,53 @@
 
       const countEl = document.querySelector('.catalogue-count-num');
       if (countEl) countEl.textContent = visibleCount;
+      updateActiveFilterBadge();
+    }
+
+    // Mobile & Tab View (<= 1024px) Filter Toggle & Badge Logic
+    const filterToggleBtn = document.getElementById('mobileFilterToggle');
+    const filterSidebar = document.getElementById('catalogueFilterSidebar') || document.querySelector('.filter-sidebar');
+    const applyFilterBtn = document.getElementById('applyMobileFilterBtn');
+    const activeFilterBadge = document.getElementById('activeFilterBadge');
+
+    function updateActiveFilterBadge() {
+      if (!activeFilterBadge) return;
+      const checkedCount = Array.from(catCheckboxes).filter(c => c.checked).length;
+      if (checkedCount > 0) {
+        activeFilterBadge.textContent = checkedCount;
+        activeFilterBadge.style.display = 'inline-flex';
+      } else {
+        activeFilterBadge.style.display = 'none';
+      }
+    }
+
+    if (filterToggleBtn && filterSidebar) {
+      filterToggleBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const isOpen = filterSidebar.classList.contains('open');
+        if (isOpen) {
+          filterSidebar.classList.remove('open');
+          filterToggleBtn.classList.remove('active');
+          filterToggleBtn.setAttribute('aria-expanded', 'false');
+        } else {
+          filterSidebar.classList.add('open');
+          filterToggleBtn.classList.add('active');
+          filterToggleBtn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    }
+
+    if (applyFilterBtn && filterSidebar && filterToggleBtn) {
+      applyFilterBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        filterSidebar.classList.remove('open');
+        filterToggleBtn.classList.remove('active');
+        filterToggleBtn.setAttribute('aria-expanded', 'false');
+        const catalogueGrid = document.querySelector('.catalogue-products-grid');
+        if (catalogueGrid) {
+          catalogueGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
     }
 
     catCheckboxes.forEach(c => c.addEventListener('change', filterCatalogue));
